@@ -1,6 +1,6 @@
 # get-value [![NPM version](https://img.shields.io/npm/v/get-value.svg?style=flat)](https://www.npmjs.com/package/get-value) [![NPM monthly downloads](https://img.shields.io/npm/dm/get-value.svg?style=flat)](https://npmjs.org/package/get-value) [![NPM total downloads](https://img.shields.io/npm/dt/get-value.svg?style=flat)](https://npmjs.org/package/get-value) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/get-value.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/get-value)
 
-> Use property paths like 'a.b.c' to get a nested value from an object. Even works when keys have dots in them (no other dot-prop library can do this!).
+> Use property paths like 'a.b.c' to get a nested value from an object. Even works when keys have dots in them.
 
 Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
 
@@ -55,7 +55,7 @@ console.log(get(obj, 'a.b.c.d')); //=> 'foo'
 
 ### Supports keys with dots
 
-Unlike other dot-prop libraries, get-value works when keys have dots in them:
+Unlike many other dot-prop libraries, get-value works when keys have dots in them:
 
 ```js
 console.log(get({ 'a.b': { c: 'd' } }, 'a.b.c'));
